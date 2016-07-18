@@ -4,5 +4,10 @@ go:
   - 1.6
   - tip
 
+sudo: required
+
+services:
+  - docker
+  
 install:
   - build/run.sh make
