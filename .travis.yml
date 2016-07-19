@@ -10,3 +10,16 @@ services:
   
 script:
   - make quick-release
+  
+# blocklist
+branches:
+  except:
+  - legacy
+  - experimental
+
+# safelist
+branches:
+  only:
+#  - master
+#  - stable
+  - cuericlee-patch-1
