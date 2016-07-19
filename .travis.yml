@@ -10,4 +10,6 @@ services:
   - docker
   
 install:
-  - build/run.sh make
+  - make verify
+  - make all
+  - make release
