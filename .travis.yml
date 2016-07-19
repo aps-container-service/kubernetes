@@ -2,7 +2,6 @@ language: go
 
 go:
   - 1.6
-  - tip
 
 sudo: required
 
@@ -10,7 +9,4 @@ services:
   - docker
   
 install:
-  - export VERBOSE=true
-  - make verify BRANCH=cuericlee-patch-1
-  - make all
-  - make release
+  - make quick-release
