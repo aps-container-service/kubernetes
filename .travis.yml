@@ -8,5 +8,5 @@ sudo: required
 services:
   - docker
   
-install:
+script:
   - make quick-release
