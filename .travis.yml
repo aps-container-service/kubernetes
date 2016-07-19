@@ -10,6 +10,6 @@ services:
   - docker
   
 install:
-  - make verify
+  - make verify BRANCH=cuericlee-patch-1
   - make all
   - make release
