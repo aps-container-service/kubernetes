@@ -9,7 +9,7 @@ services:
   - docker
   
 script:
-  - make quick-release
+  - travis_wait 60 make quick-release
   
 # blocklist
 branches:
