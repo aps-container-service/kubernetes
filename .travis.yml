@@ -1,0 +1,26 @@
+language: go
+
+go:
+  - 1.6
+
+sudo: required
+
+services:
+  - docker
+  
+script:
+  - travis_wait 60 make quick-release
+  #- travis_wait 120 make test #Test never works
+  
+# blocklist
+branches:
+  except:
+  - legacy
+  - experimental
+
+# safelist
+branches:
+  only:
+#  - master
+#  - stable
+  - cuericlee-patch-1
